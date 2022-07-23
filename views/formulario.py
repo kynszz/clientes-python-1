@@ -1,4 +1,7 @@
 # View - o que vai para o usuário
+from http import client
+
+
 def formulario_login():
     usuario_digitado = input("Informe o seu usuário: ")
     senha_digitado = input("Informe sua senha: ")
@@ -18,3 +21,9 @@ def menu():
     print(" 3 - para sair")
     opcao = input("digite a opção")
     return opcao
+
+def cadastro_clientes():
+    nome = input("Informe o nome:")
+    telefone = input("Informe o telefone:")
+    cliente = [nome,telefone]
+    return cliente
