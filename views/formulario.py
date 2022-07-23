@@ -11,3 +11,10 @@ def exibir_mensagem(texto):
     print(texto)
     print("=============")
     print("\n\n")
+
+def menu():
+    print(" 1 - Para cadastrar novo cliente")
+    print(" 2 - Para listar todos os cliente")
+    print(" 3 - para sair")
+    opcao = input("digite a opção")
+    return opcao
