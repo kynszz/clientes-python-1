@@ -11,4 +11,5 @@ def validar_login(usuario_completo):
         print("usuário ou senha inválido")
 
 def iniciar():
-    view.formulario_login()
+    usuario_completo = view.formulario_login()
+    validar_login(view.formulario_login())
