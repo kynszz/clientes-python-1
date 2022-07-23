@@ -15,4 +15,5 @@ def model_senha():
     senha_BD = '123'
     return senha_BD 
 
-    print(model_usuario()) 
+def model_cadastro_cliente(cliente):
+    print("cadastrado")

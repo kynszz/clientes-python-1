@@ -1,3 +1,4 @@
+from http import client
 import models.banco as banco
 import views.formulario as view
 
@@ -20,9 +21,12 @@ def iniciar():
 def opcoes_menu():
     opcao = view.menu()
     if opcao == "1":
-        print("Cadastro de clientes")
+        ("Cadastro de clientes")
     elif opcao == "2":
         print("listagem de clientes")
     else:
         view.exibir_mensagem("Sistema finalizado")
         exit()
+def cadastrar_cliente():
+    cliente = view.cadastro_clientes()
+    banco.model_cadastro_cliente(cliente)
